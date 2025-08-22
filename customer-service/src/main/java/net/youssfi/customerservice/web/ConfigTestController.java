@@ -10,18 +10,18 @@ import java.util.Map;
 @RestController
 @RefreshScope
 public class ConfigTestController {
-    @Value("${customer.service.default.location}")
-    private String defaultLocation;
-    @Value("${customer.service.default.language}")
-    private String defaultLanguage;
-    @Value("${customer.service.default.currency}")
-    private String defaultCurrency;
-    @GetMapping("/configTest")
-    public Map<String, String> config(){
-        return Map.of(
-                "defaultLocation",defaultLocation,
-                "defaultLanguage",defaultLanguage,
-                "defaultCurrency",defaultCurrency
-        );
-    }
+//    @Value("${customer.service.default.location}")
+//    private String defaultLocation;
+//    @Value("${customer.service.default.language}")
+//    private String defaultLanguage;
+//    @Value("${customer.service.default.currency}")
+//    private String defaultCurrency;
+//    @GetMapping("/configTest")
+//    public Map<String, String> config(){
+//        return Map.of(
+//                "defaultLocation",defaultLocation,
+//                "defaultLanguage",defaultLanguage,
+//                "defaultCurrency",defaultCurrency
+//        );
+//    }
 }
